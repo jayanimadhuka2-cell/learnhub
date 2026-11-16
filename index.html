@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LearnHub | Student Learning Hub</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffddca;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    nav {
+      background-color: #1b5448;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav h2 {
+      color: #fff;
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffd166;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #a0d6b4, #006a4e);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      margin: 0 0 15px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 30px;
+      border-radius: 25px;
+      background-color: #ffd166;
+      color: #222;
+      font-size: 16px;
+      font-weight: bold;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .courses {
+      padding: 55px 8%;
+      text-align: center;
+    }
+
+    .courses h2 {
+      color: #16213e;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .courses-intro {
+      color: #666;
+      margin: 0 0 35px;
+    }
+
+    .course-container {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .course-card {
+      background-color: #fff;
+      width: 270px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+      text-align: left;
+    }
+
+    .course-icon {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    .course-card h3 {
+      color: #4361ee;
+      font-size: 21px;
+      margin: 0 0 10px;
+    }
+
+    .course-card p {
+      color: #666;
+      line-height: 1.6;
+      margin: 0 0 15px;
+    }
+
+    .course-card a {
+      color: #7209b7;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #1b5448;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="home">
+    <h2>LearnHub</h2>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Learn Today, Build Tomorrow</h1>
+    <p>
+      Explore exciting courses, improve your skills,
+      and prepare yourself for the digital world.
+    </p>
+    <a href="#courses" class="cta-btn">Explore Courses</a>
+  </section>
+
+  <section class="courses" id="courses">
+    <h2>Popular Courses</h2>
+    <p class="courses-intro">
+      Choose a course and start developing your skills.
+    </p>
+
+    <div class="course-container">
+      <div class="course-card">
+        <div class="course-icon">💻</div>
+        <h3>Web Development</h3>
+        <p>
+          Learn HTML, CSS and JavaScript to create modern websites.
+        </p>
+        <a href="#">View Course →</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-icon">🐍</div>
+        <h3>Python Programming</h3>
+        <p>
+          Learn programming fundamentals and develop useful applications.
+        </p>
+        <a href="#">View Course →</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-icon">📊</div>
+        <h3>Data Analytics</h3>
+        <p>
+          Discover how data can be analyzed to support better decisions.
+        </p>
+        <a href="#">View Course →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>© 2026 LearnHub | Learn. Practice. Grow.</p>
+  </footer>
+</body>
+</html>
